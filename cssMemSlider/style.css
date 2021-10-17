@@ -61,7 +61,7 @@ ol, li {
 .carousel__navigation {
     position: absolute;
     right: 0;
-    bottom: 25px;
+    bottom: -5px;
     text-align: right;
     background-color: #25282a;
     height: 4rem;
@@ -72,6 +72,10 @@ ol, li {
 .carousel__navigation-list,
 .carousel__navigation-item {
     display: inline-block;
+}
+.carousel__navigation-item:target{
+    background-color: #f69d50;
+
 }
 
 .carousel__navigation-button {
@@ -86,15 +90,24 @@ ol, li {
     transition: transform 0.1s;
 }
 
+.carousel__navigation-button:hover{
+    background-color: #ffffff;
+}
+.carousel__navigation-button:active > input{
+
+}
+
 .carousel__text {
     position: absolute;
-    bottom: -50px;
+    bottom: -3rem;
     width: 50%;
     color: #ffffff;
+    font-size: 1rem;
+    overflow: hidden;
 }
 
 #carousel__slide2 .carousel__text, #carousel__slide4 .carousel__text {
-    bottom: -34px;
+    bottom: -2rem;
 }
 
 .wrapper {
@@ -102,3 +115,22 @@ ol, li {
     padding: 1rem;
 }
 
+@media (max-width: 600px) {
+    html{
+        font-size: 10px;
+    }
+    .carousel__text{
+        bottom: -4rem !important;
+        width: 100%;
+    }
+    .carousel__navigation{
+        height: 1.5rem;
+        bottom: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    .carousel__viewport{
+        padding-bottom: 4rem;
+    }
+
+}
