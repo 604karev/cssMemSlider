@@ -46,6 +46,7 @@ ol, li {
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    padding-bottom: 3rem;
 }
 
 .carousel__slide {
@@ -54,13 +55,18 @@ ol, li {
     width: 100%;
     background-image: url("assets/img/mem1.jpg");
     background-size: cover;
+    border-radius: 5px;
 }
+
 .carousel__navigation {
     position: absolute;
     right: 0;
-    bottom: -40px;
+    bottom: 25px;
     text-align: right;
-    background-color: #fff;
+    background-color: #25282a;
+    height: 4rem;
+    width: 40%;
+
 }
 
 .carousel__navigation-list,
@@ -79,47 +85,20 @@ ol, li {
     font-size: 0;
     transition: transform 0.1s;
 }
-@keyframes tonext {
-    75% {
-        left: 0;
-    }
-    95% {
-        left: 100%;
-    }
-    98% {
-        left: 100%;
-    }
-    99% {
-        left: 0;
-    }
+
+.carousel__text {
+    position: absolute;
+    bottom: -50px;
+    width: 50%;
+    color: #ffffff;
 }
 
-@keyframes tostart {
-    75% {
-        left: 0;
-    }
-    95% {
-        left: -300%;
-    }
-    98% {
-        left: -300%;
-    }
-    99% {
-        left: 0;
-    }
+#carousel__slide2 .carousel__text, #carousel__slide4 .carousel__text {
+    bottom: -34px;
 }
 
-@keyframes snap {
-    96% {
-        scroll-snap-align: center;
-    }
-    97% {
-        scroll-snap-align: none;
-    }
-    99% {
-        scroll-snap-align: none;
-    }
-    100% {
-        scroll-snap-align: center;
-    }
+.wrapper {
+    background-color: #25282a;
+    padding: 1rem;
 }
+
