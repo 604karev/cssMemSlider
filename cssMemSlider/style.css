@@ -37,3 +37,27 @@ ol, li {
     background-image: url("assets/img/mem1.jpg");
     background-size: cover;
 }
+.carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    text-align: right;
+    background-color: #fff;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+    display: inline-block;
+}
+
+.carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #71abff;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
