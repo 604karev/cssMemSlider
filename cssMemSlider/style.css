@@ -3,3 +3,37 @@ body {
     margin: 0 auto;
     padding: 0 1.25rem;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+    padding-top: 75%;
+    perspective: 100px;
+}
+
+.carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-image: url("assets/img/mem1.jpg");
+    background-size: cover;
+}
